@@ -23,11 +23,16 @@ let productSales = [
 function calculateTotalSales(items) {
   let total = 0;
   for (let item of items) {
-    total = total + item.sale;
+    total = total + item.sales;  //item.sales
   }
   return total;
 }
 
-let total = calculateTotalSales();
+let total = calculateTotalSales(productSales);
 
 console.log("Total sales: ", total);
+
+/*ผลลัพธ์ของโปรแกรมจะต้องได้แบบนี้ทางหน้าจอ
+
+'Total sales: 1995600.22'
+*/
